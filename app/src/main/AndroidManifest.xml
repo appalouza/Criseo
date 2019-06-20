@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".slide"></activity>
-        <activity android:name=".recyclerImg"></activity>
+        <activity android:name=".videoView"></activity>
+        <activity android:name=".slide" />
+        <activity android:name=".recyclerImg" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

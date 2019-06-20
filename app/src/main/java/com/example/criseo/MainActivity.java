@@ -65,6 +65,13 @@ public class MainActivity extends AppCompatActivity {
      *
      */
 
+    @OnClick(R.id.launchVideo)
+    public void showVideo(){
+        Intent intent = new Intent(MainActivity.this, videoView.class);
+        Log.d(TAG, "showVideo: ");
+        startActivity(intent);
+    }
+
     @OnClick(R.id.launchImg)
     public void showImage(){
         Intent intent = new Intent(MainActivity.this, recyclerImg.class);

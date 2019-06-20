@@ -23,9 +23,9 @@ public class slideAdapter extends PagerAdapter {
     public int[] lst_images = {
 
             R.drawable.ic_path_patrouille,
-            R.drawable.ic_scooby_doo,
-            R.drawable.ic_videogame_asset_white_96dp,
-            R.drawable.ic_volume_up_white_96dp
+            R.drawable.scooby,
+            R.drawable.mickey,
+
     };
 
     public static String encodeToBase64(Bitmap image)
@@ -43,23 +43,23 @@ public class slideAdapter extends PagerAdapter {
     // list of titles
     public String[] lst_title = {
             "Pat Patrouille",
-            "SATELITE",
-            "GALAXY",
-            "ROCKET"
+            "Scooby-Doo bi DOOOOO",
+            "Mickey",
+
     }   ;
     // list of descriptions
     public String[] lst_description = {
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
+
     };
     // list of background colors
     public int[]  lst_backgroundcolor = {
             Color.rgb(55,55,55),
             Color.rgb(239,85,85),
             Color.rgb(110,49,89),
-            Color.rgb(1,188,212)
+
     };
 
 

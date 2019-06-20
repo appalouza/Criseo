@@ -1,8 +1,11 @@
 package com.example.criseo;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.support.v4.view.PagerAdapter;
+import android.util.Base64;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,20 +13,36 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import java.io.ByteArrayOutputStream;
+
 public class slideAdapter extends PagerAdapter {
     Context context;
     LayoutInflater inflater;
 
     // list of images
     public int[] lst_images = {
-            R.drawable.ic_landscape_white_24dp,
-            R.drawable.ic_play_circle_outline_white_24dp,
+
+            R.drawable.ic_path_patrouille,
+            R.drawable.ic_scooby_doo,
             R.drawable.ic_videogame_asset_white_96dp,
             R.drawable.ic_volume_up_white_96dp
     };
+
+    public static String encodeToBase64(Bitmap image)
+    {
+        Bitmap immagex=image;
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        immagex.compress(Bitmap.CompressFormat.JPEG, 100, baos);
+        byte[] b = baos.toByteArray();
+        String imageEncoded = Base64.encodeToString(b, Base64.DEFAULT);
+
+        Log.e("LOOK", imageEncoded);
+        return imageEncoded;
+    }
+
     // list of titles
     public String[] lst_title = {
-            "COSMONAUT",
+            "Pat Patrouille",
             "SATELITE",
             "GALAXY",
             "ROCKET"
